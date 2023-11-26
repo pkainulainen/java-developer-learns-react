@@ -1,25 +1,22 @@
 import styled from 'styled-components';
-import './App.css'
+import './App.css';
 
 const BoringDiv = ({ className }: { className?: string }) => (
-  <div className={className}>
-    Lorem ipsum 
-  </div>
-)
+  <div className={className}>Lorem ipsum</div>
+);
 
-const CoolDiv = styled(BoringDiv) `
+const CoolDiv = styled(BoringDiv)`
   background-color: #292929;
-  color: #FFF;
-`
+  color: #fff;
+`;
 
 function App() {
-
   return (
     <>
       <BoringDiv></BoringDiv>
       <CoolDiv></CoolDiv>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
